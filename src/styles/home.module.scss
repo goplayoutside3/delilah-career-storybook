@@ -1,0 +1,123 @@
+#book-animation {
+  --page-count: 20;
+  --page-scroll: 25;
+  --spine: hsl(0, 0%, 0%);
+  --cover: hsl(0, 0%, 10%);
+  --page: hsl(0, 0%, 90%);
+  height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+
+  .number {
+    position: absolute;
+    color: hsl(0, 0%, 50%);
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+
+  &.half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &.front {
+      --rotation: 0;
+      --coefficient: 0;
+      backface-visibility: hidden;
+      border-radius: 0 5% 5% 0;
+    }
+
+    &.back {
+      --rotation: 180;
+      --coefficient: 2;
+      border-radius: 5% 0 0 5%;
+    }
+
+    transform: rotateY(calc(var(--rotation) * 1deg))
+    translate3d(0, 0, calc((0.5 * var(--coefficient)) * 1px));
+    clip-path: inset(0 0.5% 0 0.5%);
+
+  }
+}
+
+.book {
+  height: 50vmin;
+  position: fixed;
+  width: 35vmin;
+  min-width: 150px;
+  min-height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 1200px;
+
+  &.spine {
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: var(--spine);
+    transform-origin: 0 50%;
+    width: 12px;
+    transform: translate3d(0, 0, -13px) scaleX(1) rotateY(0deg);
+  }
+
+  &.page {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    border: 1px solid black;
+    background-color: var(--page);
+    border-radius: 0 5% 5% 0;
+    transform: translate(0, -50%);
+    height: 94%;
+    width: 94%;
+    z-index: calc(((var(--page-count) + 2) - var(--page-index)) * 2);
+    transform-origin: 0% 50%;
+  }
+
+  &.cover {
+    border-radius: 0 5% 5% 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--cover);
+
+    &.front {
+      transform-origin: 0 50%;
+
+      .half.back {
+        border-right: 1rem solid var(--spine);
+      }
+    }
+
+    &.back {
+      transform-origin: 0% 50%;
+
+      .half.front {
+        border-left: 1rem solid var(--spine);
+      }
+
+      .insert {
+        left: 0;
+        border-radius: 0 5% 5% 0;
+      }
+    }
+  }
+}
+
+
