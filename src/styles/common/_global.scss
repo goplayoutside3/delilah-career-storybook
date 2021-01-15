@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import '../common/_mixins.scss';
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: $noto-reg;
+	color: $black;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 2.5rem;
+
+	@include media-breakpoint-up(md) {
+		font-size: 3rem;
+	}
+}
+
+.h2 {
+	line-height: 1;
+	margin-bottom: $copy-margin-bottom * 2;
+	font-size: 1.5rem;
+
+	@include media-breakpoint-up(md) {
+		font-size: 2rem;
+	}
+}
+
+.h3 {
+	font-size: 1.2rem;
+	margin-bottom: $copy-margin-bottom;
+
+	@include media-breakpoint-up(md) {
+		font-size: 1.5rem;
+	}
+}
+
+p {
+	margin-bottom: $copy-margin-bottom;
+}

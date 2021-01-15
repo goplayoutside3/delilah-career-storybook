@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Yusei-Regular';
+  src: url('/fonts/YuseiMagic/YuseiMagic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto-Thin';
+  src: url('/fonts/NotoSansJP/NotoSansJP-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto-Light';
+  src: url('/fonts/NotoSansJP/NotoSansJP-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto-Regular';
+  src: url('/fonts/NotoSansJP/NotoSansJP-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto-Medium';
+  src: url('/fonts/NotoSansJP/NotoSansJP-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto-Bold';
+  src: url('/fonts/NotoSansJP/NotoSansJP-Bold.otf') format('opentype');
+}
+
+$yusei: 'Yusei-Regular';
+$noto-thin: 'Noto-Thin';
+$noto-light: 'Noto-Light';
+$noto-reg: 'Noto-Regular';
+$noto-med: 'Noto-Medium';
+$noto-bold: 'Noto-Bold';
