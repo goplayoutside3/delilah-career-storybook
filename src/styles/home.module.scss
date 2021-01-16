@@ -1,17 +1,17 @@
 @import '../styles/common/variables';
 
-$page-shape: 0 5% 5% 0;
+$page-shape: 0 3% 3% 0;
 
 #book-animation {
   --page-count: 11; // make sure to change this if needed
-  --page-scroll: 25; // calcs scroll area
+  --page-scroll: 26; // helps calcs scroll area
   height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
 }
 
 .book {
   position: fixed;
-  height: 80vmin;
-  width: 50vmin;
+  height: 85vmin;
+  width: 60vmin;
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
@@ -21,7 +21,7 @@ $page-shape: 0 5% 5% 0;
   &.page {
     transform-style: preserve-3d;
     position: absolute;
-    left: 2%;
+    left: 1%;
     top: 50%;
     transform: translate(0, -50%);
     transform-origin: 0% 50%;
@@ -41,6 +41,10 @@ $page-shape: 0 5% 5% 0;
     top: 50%;
     left: 0;
     background: $dark-gray;
+
+    &.front {
+      margin-left: 1px;
+    }
   }
 
   .number {

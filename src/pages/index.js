@@ -8,12 +8,11 @@ import styles from '../styles/home.module.scss';
 export default function Home() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     const allPages = Array.from(document.getElementsByClassName('book-page'));
 
     allPages.forEach((page, index) => {
-      gsap.set(page, { z: index === 0 ? 13 : -index * 1 })
-      if (index === 11) return false
+      gsap.set(page, { z: -index * 1 });
+
       gsap.to(page, {
         rotateY: `-=${180 - index / 2}`,
         scrollTrigger: {
@@ -21,16 +20,16 @@ export default function Home() {
           start: () => index * (window.innerHeight * 0.4),
           end: () => (index + 1) * (window.innerHeight * 0.4),
         },
-      })
+      });
       gsap.to(page, {
-        z: index === 0 ? -13 : index,
+        z: index,
         scrollTrigger: {
           scrub: 1,
           start: () => index * (window.innerHeight * 0.4),
           end: () => (index + 0.5) * (window.innerHeight * 0.4),
         },
-      })
-    })
+      });
+    });
   }, []);
 
   return (
@@ -41,8 +40,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Storybook</h1>
-
         <div id={styles['book-animation']}>
           <div id="book" className={styles.book}>
             <div
@@ -53,7 +50,6 @@ export default function Home() {
                 styles.front,
                 'book-page'
               )}
-              style={{ '--page-index': 1 }}
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div>SCROLL DOWN</div>
@@ -63,10 +59,7 @@ export default function Home() {
               ></div>
             </div>
 
-            <div
-              className={classes(styles.page, styles.book, 'book-page')}
-              style={{ '--page-index': 2 }}
-            >
+            <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
                   <p>Keep Scrolling</p>
@@ -81,10 +74,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className={classes(styles.page, styles.book, 'book-page')}
-              style={{ '--page-index': 3 }}
-            >
+            <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
                   <p>Keep scrolling...</p>
@@ -99,10 +89,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className={classes(styles.page, styles.book, 'book-page')}
-              style={{ '--page-index': 4 }}
-            >
+            <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
                   <p>Etc...</p>
@@ -117,10 +104,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className={classes(styles.page, styles.book, 'book-page')}
-              style={{ '--page-index': 5 }}
-            >
+            <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>Etc...</div>
                 <div className={styles.number}>7</div>
@@ -131,10 +115,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div
-              className={classes(styles.page, styles.book, 'book-page')}
-              style={{ '--page-index': 6 }}
-            >
+            <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>Etc...</div>
                 <div className={styles.number}>9</div>
@@ -153,13 +134,10 @@ export default function Home() {
                 styles.back,
                 'book-page'
               )}
-              style={{ '--page-index': 12 }}
             ></div>
           </div>
         </div>
       </main>
-
-      <footer></footer>
     </div>
   );
 }
