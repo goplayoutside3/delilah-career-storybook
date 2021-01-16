@@ -45,7 +45,6 @@ export default function Home() {
 
         <div id={styles['book-animation']}>
           <div id="book" className={styles.book}>
-            <div className={classes(styles.book, styles.spine)} />
             <div
               className={classes(
                 styles.page,
@@ -57,7 +56,7 @@ export default function Home() {
               style={{ '--page-index': 1 }}
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.number}>SCROLL DOWN</div>
+                <div>SCROLL DOWN</div>
               </div>
               <div
                 className={classes(styles.page, styles.half, styles.back)}
