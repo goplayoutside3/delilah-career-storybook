@@ -1,4 +1,5 @@
 @import '../styles/common/variables';
+@import '../styles//common/mixins';
 
 $page-shape: 0 3% 3% 0;
 
@@ -10,13 +11,18 @@ $page-shape: 0 3% 3% 0;
 
 .book {
   position: fixed;
-  height: 85vmin;
-  width: 60vmin;
+  height: 75vmin;
+  width: 48vmin;
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
   transform-style: preserve-3d;
   perspective: 1200px;
+
+  @include media-breakpoint-up(md) {
+    height: 85vmin;
+    width: 60vmin;
+  }
 
   &.page {
     transform-style: preserve-3d;
