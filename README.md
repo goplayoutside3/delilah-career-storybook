@@ -2,7 +2,7 @@ This is a web app built for [Mint Bean](https://www.mintbean.io/)'s weekly hacka
 
 ## Deployed Preview
 
-Check out the app here! [delilah-career-storybook.vercel.app] (https://delilah-career-storybook.vercel.app/)
+Check out the app here! [delilah-career-storybook.vercel.app](https://delilah-career-storybook.vercel.app/)
 
 ## Getting Started
 
