@@ -41,7 +41,9 @@ export default function Home() {
 
       <main>
         <div id={styles['book-animation']}>
-          <div id="book" className={styles.book}>
+          <div className={classes(styles.book, styles.shadow)}>Behind</div>
+          <div id={styles.book} className={styles.book}>
+
             <div
               className={classes(
                 styles.page,
@@ -134,7 +136,8 @@ export default function Home() {
                 styles.back,
                 'book-page'
               )}
-            ></div>
+            />
+
           </div>
         </div>
       </main>

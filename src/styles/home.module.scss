@@ -9,7 +9,8 @@ $page-shape: 0 3% 3% 0;
   height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
 }
 
-.book {
+.book,
+.shadow {
   position: fixed;
   height: 75vmin;
   width: 48vmin;
@@ -24,6 +25,11 @@ $page-shape: 0 3% 3% 0;
     width: 60vmin;
   }
 
+  &.shadow {
+    box-shadow: 2vmin 2vmin 2vmin $white, -2vmin -2vmin 2vmin $white;
+    border-radius: $page-shape;
+  }
+
   &.page {
     transform-style: preserve-3d;
     position: absolute;
@@ -34,7 +40,7 @@ $page-shape: 0 3% 3% 0;
     height: 94%;
     width: 94%;
     border: 1px solid $black;
-    background-color: $light-gray;
+    background-color: $white;
     border-radius: $page-shape;
     z-index: calc(((var(--page-count) + 2) - var(--page-index)) * 2);
   }
@@ -64,7 +70,7 @@ $page-shape: 0 3% 3% 0;
 
 .page {
   transform: rotateY(calc(var(--rotation) * 1deg))
-  translate3d(0, 0, calc((0.5 * var(--coefficient)) * 1px));
+    translate3d(0, 0, calc((0.5 * var(--coefficient)) * 1px));
 
   &.half {
     display: flex;
