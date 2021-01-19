@@ -43,7 +43,6 @@ export default function Home() {
         <div id={styles['book-animation']}>
           <div className={classes(styles.book, styles.shadow)}>Behind</div>
           <div id={styles.book} className={styles.book}>
-
             <div
               className={classes(
                 styles.page,
@@ -56,21 +55,71 @@ export default function Home() {
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div>SCROLL DOWN</div>
               </div>
-              <div
-                className={classes(styles.page, styles.half, styles.back)}
-              ></div>
+              <div className={classes(styles.page, styles.half, styles.back)}>
+                <div className={styles.content}>
+                  <p className={styles['inner-cover-text']}>
+                    This app was built as part of{' '}
+                    <a href="https://www.mintbean.io/" target="_blank">
+                      Mint Bean
+                    </a>
+                    's weekly hackathon. It utilizes{' '}
+                    <a href="https://nextjs.org/" target="_blank">
+                      Next.js
+                    </a>
+                    ,{' '}
+                    <a href="https://greensock.com/gsap/" target="_blank">
+                      GSAP
+                    </a>
+                    , and{' '}
+                    <a href="https://sass-lang.com/" target="_blank">
+                      SASS
+                    </a>
+                    .
+                  </p>
+                  <p className={styles['inner-cover-text']}>
+                    Check out the hackathon requirements{' '}
+                    <a
+                      href="https://www.mintbean.io/meets/9e5bf4a2-5059-4ced-b893-f8da102c7a35"
+                      target="_blank"
+                    >
+                      here
+                    </a>
+                    !
+                  </p>
+                  <p
+                    className={classes(
+                      styles['inner-cover-text'],
+                      styles.credit
+                    )}
+                  >
+                    Book animation is adapted for React.js from{' '}
+                    <a href="https://codepen.io/jh3y" target="_blank">
+                      jhey
+                    </a>
+                    's{' '}
+                    <a
+                      href="https://codepen.io/jh3y/pen/VweZryJ"
+                      target="_blank"
+                    >
+                      Codepen
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <p>Keep Scrolling</p>
+                  <h1>Delilah's Journey to Web Development</h1>
+                  <p>(Keep Scrolling)</p>
                 </div>
                 <div className={styles.number}>1</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p>Etc...</p>
+                  <p>Picture here</p>
                 </div>
                 <div className={styles.number}>2</div>
               </div>
@@ -79,13 +128,15 @@ export default function Home() {
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <p>Keep scrolling...</p>
+                  <p className={styles.years}>2009 - 2018</p>
+                  <h2 className="h2">Wilderness Trip Leader</h2>
+                  <p>Details here</p>
                 </div>
                 <div className={styles.number}>3</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p>Etc...</p>
+                  <p>Picture here</p>
                 </div>
                 <div className={styles.number}>4</div>
               </div>
@@ -94,13 +145,15 @@ export default function Home() {
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <p>Etc...</p>
+                  <p>2014 - 2016</p>
+                  <h2 className="h2">Master of Science in Aquatic Biology</h2>
+                  <p>Details here</p>
                 </div>
                 <div className={styles.number}>5</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p>Etc...</p>
+                  <p>Picture here</p>
                 </div>
                 <div className={styles.number}>6</div>
               </div>
@@ -108,23 +161,52 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>Etc...</div>
+                <div className={styles.content}>
+                  <p>2018 - 2019</p>
+                  <h2 className="h2">Fullstack Academy of Code</h2>
+                  <p>Details here</p>
+                </div>
                 <div className={styles.number}>7</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>Etc...</div>
+                <div className={styles.content}>
+                  <p>Picture here</p>
+                </div>
                 <div className={styles.number}>8</div>
               </div>
             </div>
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>Etc...</div>
+                <div className={styles.content}>
+                  <p>2019 - 2020</p>
+                  <h2 className="h2">Web Developer at Reach Creative</h2>
+                  <p>Details here</p>
+                </div>
                 <div className={styles.number}>9</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>Etc...</div>
+                <div className={styles.content}>
+                  <p>Picture here</p>
+                </div>
                 <div className={styles.number}>10</div>
+              </div>
+            </div>
+
+            <div className={classes(styles.page, styles.book, 'book-page')}>
+              <div className={classes(styles.page, styles.half, styles.front)}>
+                <div className={styles.content}>
+                  <p>2021 - Present</p>
+                  <h2 className="h2">Web Developer at Adler Planetarium</h2>
+                  <p>Details here</p>
+                </div>
+                <div className={styles.number}>11</div>
+              </div>
+              <div className={classes(styles.page, styles.half, styles.back)}>
+                <div className={styles.content}>
+                  <p>The end! Add all relevant links to socials here.</p>
+                </div>
+                <div className={styles.number}>12</div>
               </div>
             </div>
 
@@ -137,7 +219,6 @@ export default function Home() {
                 'book-page'
               )}
             />
-
           </div>
         </div>
       </main>

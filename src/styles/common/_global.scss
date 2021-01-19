@@ -19,14 +19,17 @@ body {
 }
 
 h1 {
-	font-size: 2.5rem;
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: $copy-margin-bottom;
 
 	@include media-breakpoint-up(md) {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 }
 
 .h2 {
+	text-align: center;
 	line-height: 1;
 	margin-bottom: $copy-margin-bottom * 2;
 	font-size: 1.5rem;

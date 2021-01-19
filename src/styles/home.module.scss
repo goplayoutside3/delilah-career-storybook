@@ -4,8 +4,8 @@
 $page-shape: 0 3% 3% 0;
 
 #book-animation {
-  --page-count: 11; // make sure to change this if needed
-  --page-scroll: 26; // helps calcs scroll area
+  --page-count: 13; // make sure to change this if needed
+  --page-scroll: 25; // helps calcs scroll area
   height: calc(((var(--page-count) + 2) * var(--page-scroll)) * 1vh);
 }
 
@@ -93,4 +93,21 @@ $page-shape: 0 3% 3% 0;
       --coefficient: 2;
     }
   }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: $page-shape;
+  padding: $section-padding;
+}
+
+.inner-cover-text {
+  color: $white;
+  text-align: center;
+  line-height: 1.5;
 }
