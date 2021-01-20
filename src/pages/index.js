@@ -141,9 +141,13 @@ export default function Home() {
                 <div className={styles.number}>3</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>
-                  <p>Picture here</p>
-                </div>
+                <div
+                  className={classes(
+                    styles.content,
+                    styles.illustration,
+                    styles.wading
+                  )}
+                />
                 <div className={styles.number}>4</div>
               </div>
             </div>
@@ -158,9 +162,13 @@ export default function Home() {
                 <div className={styles.number}>5</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>
-                  <p>Picture here</p>
-                </div>
+                <div
+                  className={classes(
+                    styles.content,
+                    styles.illustration,
+                    styles.city
+                  )}
+                />
                 <div className={styles.number}>6</div>
               </div>
             </div>
@@ -192,9 +200,13 @@ export default function Home() {
                 <div className={styles.number}>9</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>
-                  <p>Picture here</p>
-                </div>
+                <div
+                  className={classes(
+                    styles.content,
+                    styles.illustration,
+                    styles.adler
+                  )}
+                />
                 <div className={styles.number}>10</div>
               </div>
             </div>

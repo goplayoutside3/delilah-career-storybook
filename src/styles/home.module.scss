@@ -116,6 +116,19 @@ $page-shape-back: 3% 0 0 3%;
   &.canoe {
     background-image: url('/images/canoe.svg');
   }
+
+  &.wading {
+    background-image: url('/images/wading.svg');
+  }
+
+  &.city {
+    background-image: url('/images/cityscape.svg');
+    background-color: $grey-blue;
+  }
+
+  &.adler {
+    background-image: url('/images/chicago.svg');
+  }
 }
 
 .inner-cover-text {
