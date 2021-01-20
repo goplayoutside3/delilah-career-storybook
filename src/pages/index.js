@@ -207,7 +207,7 @@ export default function Home() {
                     <li>
                       Graduated from{' '}
                       <a href="https://www.gvsu.edu/wri/" target="_blank">
-                        Annis Water Resources Institute{' '}
+                        AWRI{' '}
                       </a>
                       of{' '}
                       <a href="https://www.gvsu.edu/" target="_blank">

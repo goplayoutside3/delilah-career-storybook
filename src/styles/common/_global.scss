@@ -21,12 +21,8 @@ body {
 h1 {
 	font-family: $yusei;
 	text-align: center;
-	font-size: 2rem;
+	font-size: clamp(1.9rem, 4vw, 5rem);
 	margin-bottom: $copy-margin-bottom;
-
-	@include media-breakpoint-up(md) {
-		font-size: 3rem;
-	}
 }
 
 .h2 {
@@ -34,29 +30,27 @@ h1 {
 	font-family: $yusei;
 	text-align: center;
 	line-height: 1;
-	margin-bottom: $copy-margin-bottom * 2;
-	font-size: 1.5rem;
+	margin-bottom: $copy-margin-bottom-mobile;
+	font-size: clamp(1rem, 3vw, 2rem);
 	line-height: 1.1;
 
-	@include media-breakpoint-up(md) {
-		font-size: 2rem;
-	}
-}
-
-.h3 {
-	font-size: 1.2rem;
-	margin-bottom: $copy-margin-bottom;
-
-	@include media-breakpoint-up(md) {
-		font-size: 1.5rem;
+	@include media-breakpoint-up(sm) {
+		margin-bottom: $copy-margin-bottom * 2;
 	}
 }
 
 p, li {
-	margin-bottom: $copy-margin-bottom;
-	line-height: 1.5;
+	margin-bottom: $copy-margin-bottom-mobile;
+	line-height: 1.2;
+	font-size: 0.8rem;
 	color: $black;
 	font-family: $noto-light;
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: $copy-margin-bottom;
+		line-height: 1.5;
+		font-size: 1rem;
+	}
 }
 
 a {
@@ -67,5 +61,13 @@ a {
 
 	&:hover {
 		color: $sky-blue;
+	}
+}
+
+.mobile-none {
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
 	}
 }

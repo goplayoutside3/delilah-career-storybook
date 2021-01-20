@@ -45,13 +45,25 @@ $page-shape-back: 3% 0 0 3%;
   perspective: 1200px;
 
   @include media-breakpoint-up(md) {
+    height: 75vmin;
+    width: 48vmin;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 80vmin;
+    width: 60vmin;
+  }
+
+  @include media-breakpoint-up(xl) {
     height: 85vmin;
     width: 60vmin;
   }
 
   &.shadow {
-    box-shadow: 2vmin 2vmin 3vmin $white, -1vmin -2vmin 3vmin $white;
-    border-radius: $page-shape;
+    @include media-breakpoint-up(md) {
+      box-shadow: 2vmin 2vmin 3vmin $white, -1vmin -2vmin 3vmin $white;
+      border-radius: $page-shape;
+    }
   }
 
   &.scroll {
@@ -61,16 +73,23 @@ $page-shape-back: 3% 0 0 3%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+    }
 
     .down {
-      width: 2rem;
+      width: 1.5rem;
       animation-direction: normal;
       animation-duration: 3s;
       animation-name: downFrames;
       animation-play-state: running;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
+
+      @include media-breakpoint-up(md) {
+        width: 2rem;
+      }
     }
   }
 
@@ -103,7 +122,7 @@ $page-shape-back: 3% 0 0 3%;
       color: $clay;
 
       .subtext {
-        font-size: 2.2vw;
+        font-size: clamp(1rem, 2.2vw, 3rem);
         color: $clay;
       }
     }
@@ -115,7 +134,11 @@ $page-shape-back: 3% 0 0 3%;
     color: $dark-gray;
     bottom: 1rem;
     right: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 0.8rem;
+    }
 
     &.left-bottom {
       left: 1rem;
@@ -172,7 +195,15 @@ $page-shape-back: 3% 0 0 3%;
 
   .years {
     font-family: $yusei;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: $copy-margin-bottom;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+    }
   }
 
   .details {
@@ -224,9 +255,15 @@ $page-shape-back: 3% 0 0 3%;
     &:before {
       position: absolute;
       top: 0;
-      left: -1.8rem;
-      height: 1.2rem;
-      width: 1.2rem;
+      left: -1.5rem;
+      height: 0.8rem;
+      width: 0.8rem;
+
+      @include media-breakpoint-up(md) {
+        left: -1.8rem;
+        height: 1.2rem;
+        width: 1.2rem;
+      }
     }
   }
 
