@@ -338,7 +338,29 @@ export default function Home() {
                 <div className={classes(styles.content, styles.resume)}>
                   <p className={styles.years}>2021 - Present</p>
                   <h2 className="h2">Web Developer at Adler Planetarium</h2>
-                  <p>Details here</p>
+                  <ul className={styles.details}>
+                    <li>Combined my science background and coding skills!</li>
+                    <li>
+                      Recently accepted a position as a{' '}
+                      <a href="https://www.zooniverse.org/" target="_blank">
+                        Zooniverse
+                      </a>{' '}
+                      web developer at{' '}
+                      <a
+                        href="https://www.adlerplanetarium.org/"
+                        target="_blank"
+                      >
+                        Adler Planetarium
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.zooniverse.org/" target="_blank">
+                        Zooniverse{' '}
+                      </a>
+                      is an organization that enables anyone to participate in
+                      research projects through citizen science
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>11</div>
               </div>
