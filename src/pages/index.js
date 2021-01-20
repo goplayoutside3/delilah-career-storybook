@@ -129,7 +129,15 @@ export default function Home() {
                     styles.canoe
                   )}
                 />
-                <div className={styles.number}>2</div>
+                <div
+                  className={classes(
+                    styles['left-bottom'],
+                    styles.number,
+                    styles.white
+                  )}
+                >
+                  2
+                </div>
               </div>
             </div>
 
@@ -150,7 +158,15 @@ export default function Home() {
                     styles.wading
                   )}
                 />
-                <div className={styles.number}>4</div>
+                <div
+                  className={classes(
+                    styles['left-bottom'],
+                    styles.number,
+                    styles.white
+                  )}
+                >
+                  4
+                </div>
               </div>
             </div>
 
@@ -171,7 +187,15 @@ export default function Home() {
                     styles.city
                   )}
                 />
-                <div className={styles.number}>6</div>
+                <div
+                  className={classes(
+                    styles['left-bottom'],
+                    styles.number,
+                    styles.white
+                  )}
+                >
+                  6
+                </div>
               </div>
             </div>
 
@@ -192,7 +216,15 @@ export default function Home() {
                     styles.globe
                   )}
                 />
-                <div className={styles.number}>8</div>
+                <div
+                  className={classes(
+                    styles['left-bottom'],
+                    styles.number,
+                    styles.white
+                  )}
+                >
+                  8
+                </div>
               </div>
             </div>
 
@@ -213,7 +245,9 @@ export default function Home() {
                     styles.adler
                   )}
                 />
-                <div className={styles.number}>10</div>
+                <div className={classes(styles['left-bottom'], styles.number)}>
+                  10
+                </div>
               </div>
             </div>
 
@@ -253,7 +287,9 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className={styles.number}>12</div>
+                <div className={classes(styles['left-bottom'], styles.number)}>
+                  12
+                </div>
               </div>
             </div>
 
@@ -266,8 +302,9 @@ export default function Home() {
                 'book-page'
               )}
             >
-              <div className={classes(styles.content, styles['end-cover'])}>
-              </div>
+              <div
+                className={classes(styles.content, styles['end-cover'])}
+              ></div>
             </div>
           </div>
         </div>

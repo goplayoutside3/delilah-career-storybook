@@ -110,7 +110,15 @@ $page-shape-back: 3% 0 0 3%;
     color: $dark-gray;
     bottom: 1rem;
     right: 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
+
+    &.left-bottom {
+      left: 1rem;
+    }
+
+    &.white {
+      color: $white;
+    }
   }
 }
 
