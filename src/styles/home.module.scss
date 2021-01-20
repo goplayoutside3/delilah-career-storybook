@@ -215,21 +215,24 @@ $page-shape-back: 3% 0 0 3%;
 .socials {
   line-height: 2;
   list-style-type: none;
+  text-align: left;
+  font-size: 1.2rem;
 
   .porfolio, .linkedin, .github {
     position: relative;
 
     &:before {
       position: absolute;
-      top: 0.1rem;
-      left: -1.5rem;
-      height: 1rem;
-      width: 1rem;
+      top: 0;
+      left: -1.8rem;
+      height: 1.2rem;
+      width: 1.2rem;
     }
   }
 
   .porfolio:before {
     content: url('/images/external-link.svg');
+    top: 0.1rem;
   }
 
   .linkedin:before {
@@ -238,6 +241,7 @@ $page-shape-back: 3% 0 0 3%;
 
   .github:before {
     content: url('/images/github.svg');
+    top: 0.1rem;
   }
 }
 
