@@ -107,7 +107,40 @@ $page-shape: 0 3% 3% 0;
 }
 
 .inner-cover-text {
-  color: $white;
+  color: $med-gray;
   text-align: center;
   line-height: 1.5;
+}
+
+.socials {
+  line-height: 2;
+  list-style-type: none;
+
+  .porfolio, .linkedin, .github {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0.1rem;
+      left: -1.5rem;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+
+  .porfolio:before {
+    content: url('/images/external-link.svg');
+  }
+
+  .linkedin:before {
+    content: url('/images/linkedin.svg');
+  }
+
+  .github:before {
+    content: url('/images/github.svg');
+  }
+}
+
+.ending {
+  color: $med-gray;
 }

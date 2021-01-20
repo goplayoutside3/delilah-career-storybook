@@ -204,7 +204,24 @@ export default function Home() {
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p>The end! Add all relevant links to socials here.</p>
+                  <h2 className="h2">Connect with me!</h2>
+                  <ul className={styles.socials}>
+                    <li className={styles.porfolio}>
+                      <a href="" target="_blank">
+                        Portfolio Site
+                      </a>
+                    </li>
+                    <li className={styles.linkedin}>
+                      <a href="" target="_blank">
+                        LinkedIn
+                      </a>
+                    </li>
+                    <li className={styles.github}>
+                      <a href="" target="_blank">
+                        Github
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>12</div>
               </div>
@@ -218,7 +235,11 @@ export default function Home() {
                 styles.back,
                 'book-page'
               )}
-            />
+            >
+              <div className={styles.content}>
+                <h2 className={classes('h2', styles.ending)}>The End</h2>
+              </div>
+            </div>
           </div>
         </div>
       </main>
