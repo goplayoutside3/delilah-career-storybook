@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import classes from 'classnames';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -19,6 +19,12 @@ export default function Home() {
           scrub: 1,
           start: () => index * (window.innerHeight * 0.4),
           end: () => (index + 1) * (window.innerHeight * 0.4),
+          onEnter: () => {
+            if (index === 1) setShadow(true);
+          },
+          onLeaveBack: () => {
+            if (index === 1) setShadow(false);
+          },
         },
       });
       gsap.to(page, {
@@ -32,20 +38,22 @@ export default function Home() {
     });
   }, []);
 
+  const [shadow, setShadow] = useState(false);
+
   return (
     <div>
       <Head>
         <title>Delilah</title>
-        <link
-          rel="shortcut icon"
-          type="image/x-icon"
-          href="/peace.svg"
-        ></link>
+        <link rel="shortcut icon" type="image/x-icon" href="/peace.svg"></link>
       </Head>
 
       <main>
         <div id={styles['book-animation']}>
-          <div className={classes(styles.scroll, styles.book)}>
+          <div
+            className={classes(styles.scroll, styles.book, {
+              [styles['shadow-true']]: shadow,
+            })}
+          >
             <p>SCROLL DOWN</p>
             <img className={styles.down} src="/images/down.svg" />
           </div>
