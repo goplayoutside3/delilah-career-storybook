@@ -35,8 +35,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Delilah's Career</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Delilah</title>
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="/peace.svg"
+        ></link>
       </Head>
 
       <main>
