@@ -102,7 +102,7 @@ $page-shape-back: 3% 0 0 3%;
     transform-origin: 0% 50%;
     height: 94%;
     width: 94%;
-    border: 1px solid $dark-gray;
+    border-left: 1px solid $dark-gray;
     background-color: $white;
     border-radius: $page-shape;
     z-index: calc(((var(--page-count) + 2) - var(--page-index)) * 2);
@@ -119,6 +119,7 @@ $page-shape-back: 3% 0 0 3%;
 
     &.front {
       margin-left: 1px;
+      border: none;
 
       .cover-img {
         background-image: url('/images/back-cover.svg');
