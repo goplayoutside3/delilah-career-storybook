@@ -115,15 +115,28 @@ $page-shape-back: 3% 0 0 3%;
     position: absolute;
     top: 50%;
     left: 0;
-    background: $sand;
+    background-color: $sand;
 
     &.front {
       margin-left: 1px;
-      color: $clay;
+
+      .cover-img {
+        background-image: url('/images/back-cover.svg');
+        background-size: cover;
+        background-position: center 5px;
+        background-repeat: no-repeat;
+        background-color: $sky-blue;
+        filter: grayscale(1);
+        opacity: 0.9;
+        justify-content: flex-start;
+        padding-top: $section-padding * 1.5;
+        color: $white;
+        text-shadow: 0 0 5px $dark-gray;
+      }
 
       .subtext {
         font-size: clamp(1rem, 2.2vw, 3rem);
-        color: $clay;
+        color: $white;
       }
     }
   }

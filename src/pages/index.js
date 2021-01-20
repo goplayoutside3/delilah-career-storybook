@@ -61,7 +61,7 @@ export default function Home() {
               )}
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
+                <div className={classes(styles.content, styles['cover-img'])}>
                   <h1>I'm Delilah</h1>
                   <h2 className={classes('h2', styles.subtext)}>
                     a fullstack web developer
