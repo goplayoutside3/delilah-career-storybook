@@ -2,6 +2,7 @@
 @import '../styles//common/mixins';
 
 $page-shape: 0 3% 3% 0;
+$page-shape-back: 3% 0 0 3%;
 
 #book-animation {
   --page-count: 13; // make sure to change this if needed
@@ -33,7 +34,7 @@ $page-shape: 0 3% 3% 0;
   &.page {
     transform-style: preserve-3d;
     position: absolute;
-    left: 1%;
+    left: 1px;
     top: 50%;
     transform: translate(0, -50%);
     transform-origin: 0% 50%;
@@ -104,6 +105,17 @@ $page-shape: 0 3% 3% 0;
   justify-content: center;
   border-radius: $page-shape;
   padding: $section-padding;
+
+  &.illustration {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $page-shape-back;
+  }
+
+  &.canoe {
+    background-image: url('/images/canoe.svg');
+  }
 }
 
 .inner-cover-text {
@@ -141,6 +153,17 @@ $page-shape: 0 3% 3% 0;
   }
 }
 
-.ending {
-  color: $med-gray;
+.end-cover {
+  background-image: url('/images/back-cover.svg');
+  background-size: cover;
+  background-position: center 2px;
+  background-repeat: no-repeat;
+  background-color: $sky-blue;
+  position: relative;
+
+  .ending {
+    color: $med-gray;
+    position: absolute;
+    top: 15%;
+  }
 }

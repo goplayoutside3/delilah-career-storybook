@@ -53,7 +53,9 @@ export default function Home() {
               )}
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div>SCROLL DOWN</div>
+                <div className={styles.content}>
+                  <h1>Delilah's Journey to Web Development</h1>
+                </div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
@@ -112,15 +114,19 @@ export default function Home() {
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <h1>Delilah's Journey to Web Development</h1>
+                  <h2 className="h2">Delilah's Journey to Web Development</h2>
                   <p>(Keep Scrolling)</p>
                 </div>
                 <div className={styles.number}>1</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>
-                  <p>Picture here</p>
-                </div>
+                <div
+                  className={classes(
+                    styles.content,
+                    styles.illustration,
+                    styles.canoe
+                  )}
+                />
                 <div className={styles.number}>2</div>
               </div>
             </div>
@@ -236,7 +242,7 @@ export default function Home() {
                 'book-page'
               )}
             >
-              <div className={styles.content}>
+              <div className={classes(styles.content, styles['end-cover'])}>
                 <h2 className={classes('h2', styles.ending)}>The End</h2>
               </div>
             </div>
