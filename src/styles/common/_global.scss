@@ -25,16 +25,18 @@ h1 {
 	margin-bottom: $copy-margin-bottom;
 
 	@include media-breakpoint-up(md) {
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 }
 
 .h2 {
+	color: $sky-blue;
 	font-family: $yusei;
 	text-align: center;
 	line-height: 1;
 	margin-bottom: $copy-margin-bottom * 2;
 	font-size: 1.5rem;
+	line-height: 1.1;
 
 	@include media-breakpoint-up(md) {
 		font-size: 2rem;
@@ -52,4 +54,18 @@ h1 {
 
 p {
 	margin-bottom: $copy-margin-bottom;
+	line-height: 1.5;
+	color: $black;
+	font-family: $noto-light;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-gray;
+	font-family: $noto-med;
+	transition: color 150ms linear;
+
+	&:hover {
+		color: $sky-blue;
+	}
 }

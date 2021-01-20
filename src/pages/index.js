@@ -43,7 +43,7 @@ export default function Home() {
         <div id={styles['book-animation']}>
           <div className={classes(styles.scroll, styles.book)}>
             <p>SCROLL DOWN</p>
-            <img className={styles.down} src="/images/down.svg"/>
+            <img className={styles.down} src="/images/down.svg" />
           </div>
           <div className={classes(styles.book, styles.shadow)} />
           <div id={styles.book} className={styles.book}>
@@ -59,12 +59,23 @@ export default function Home() {
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
                   <h1>I'm Delilah,</h1>
-                  <h2 className="h2">a fullstack web developer</h2>
+                  <h2 className={classes('h2', styles.subtext)}>
+                    a fullstack web developer
+                  </h2>
                 </div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p className={styles['inner-cover-text']}>
+                  <p>KEEP SCROLLING</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={classes(styles.page, styles.book, 'book-page')}>
+              <div className={classes(styles.page, styles.half, styles.front)}>
+                <div className={styles.content}>
+                  <h2 className="h2">A Journey to Web Development</h2>
+                  <p>
                     This app was built as part of{' '}
                     <a href="https://www.mintbean.io/" target="_blank">
                       Mint Bean
@@ -83,7 +94,7 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <p className={styles['inner-cover-text']}>
+                  <p>
                     Check out the hackathon requirements{' '}
                     <a
                       href="https://www.mintbean.io/meets/9e5bf4a2-5059-4ced-b893-f8da102c7a35"
@@ -93,12 +104,7 @@ export default function Home() {
                     </a>
                     !
                   </p>
-                  <p
-                    className={classes(
-                      styles['inner-cover-text'],
-                      styles.credit
-                    )}
-                  >
+                  <p>
                     Book animation is adapted for React.js from{' '}
                     <a href="https://codepen.io/jh3y" target="_blank">
                       jhey
@@ -112,15 +118,6 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                </div>
-              </div>
-            </div>
-
-            <div className={classes(styles.page, styles.book, 'book-page')}>
-              <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
-                  <h2 className="h2">Delilah's Journey to Web Development</h2>
-                  <p>(Keep Scrolling)</p>
                 </div>
                 <div className={styles.number}>1</div>
               </div>
@@ -270,7 +267,6 @@ export default function Home() {
               )}
             >
               <div className={classes(styles.content, styles['end-cover'])}>
-                <h2 className={classes('h2', styles.ending)}>The End</h2>
               </div>
             </div>
           </div>
