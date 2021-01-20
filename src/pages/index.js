@@ -191,10 +191,16 @@ export default function Home() {
                   <p className={styles.years}>2014 - 2016</p>
                   <h2 className="h2">Master of Science in Aquatic Biology</h2>
                   <ul className={styles.details}>
-                    <li>Designed and implemented a research project on the ecological impacts of nutrient pollution in waterways</li>
+                    <li>
+                      Designed and implemented a research project on the
+                      ecological impacts of nutrient pollution in waterways
+                    </li>
                     <li>
                       Published research in the{' '}
-                      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0380133016302015?via%3Dihub" target="_blank">
+                      <a
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0380133016302015?via%3Dihub"
+                        target="_blank"
+                      >
                         Journal of Great Lakes Research
                       </a>
                     </li>
@@ -236,8 +242,32 @@ export default function Home() {
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={classes(styles.content, styles.resume)}>
                   <p className={styles.years}>2018 - 2019</p>
-                  <h2 className="h2">Fullstack Academy of Code</h2>
-                  <p>Details here</p>
+                  <h2 className="h2">Fullstack Academy</h2>
+                  <ul className={styles.details}>
+                    <li>
+                      Graduated from{' '}
+                      <a
+                        href="https://www.fullstackacademy.com/"
+                        target="_blank"
+                      >
+                        Fullstack Academy
+                      </a>
+                      , a rigorous software development bootcamp in Chicago
+                    </li>
+                    <li>
+                      Built web apps in an agile environment with extensive pair
+                      programming
+                    </li>
+                    <li>
+                      Final project presentation:{' '}
+                      <a
+                        href="https://www.youtube.com/watch?v=EFf9O8KrWBE"
+                        target="_blank"
+                      >
+                        Via Transit
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>7</div>
               </div>
@@ -265,8 +295,27 @@ export default function Home() {
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={classes(styles.content, styles.resume)}>
                   <p className={styles.years}>2019 - 2020</p>
-                  <h2 className="h2">Web Developer at Reach Creative</h2>
-                  <p>Details here</p>
+                  <h2 className="h2">Frontend Developer at Reach Creative</h2>
+                  <ul className={styles.details}>
+                    <li>
+                      Built performant, beautifully animated web apps for{' '}
+                      <a href="https://www.reachcreative.com/" target="_blank">
+                        Reach Creative
+                      </a>
+                      , a small design agency in Chicago
+                    </li>
+                    <li>
+                      Check out my{' '}
+                      <a href="https://delilahclement.dev/" target="_blank">
+                        portfolio site
+                      </a>{' '}
+                      for example projects!
+                    </li>
+                    <li>
+                      Technologies: Javascript, SASS, React, Next.js, Three.js,
+                      GSAP, Prismic, Firebase
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>9</div>
               </div>
