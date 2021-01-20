@@ -183,9 +183,13 @@ export default function Home() {
                 <div className={styles.number}>7</div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
-                <div className={styles.content}>
-                  <p>Picture here</p>
-                </div>
+                <div
+                  className={classes(
+                    styles.content,
+                    styles.illustration,
+                    styles.globe
+                  )}
+                />
                 <div className={styles.number}>8</div>
               </div>
             </div>
@@ -225,17 +229,23 @@ export default function Home() {
                   <h2 className="h2">Connect with me!</h2>
                   <ul className={styles.socials}>
                     <li className={styles.porfolio}>
-                      <a href="" target="_blank">
+                      <a href="https://delilahclement.dev/" target="_blank">
                         Portfolio Site
                       </a>
                     </li>
                     <li className={styles.linkedin}>
-                      <a href="" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/in/delilahclement/"
+                        target="_blank"
+                      >
                         LinkedIn
                       </a>
                     </li>
                     <li className={styles.github}>
-                      <a href="" target="_blank">
+                      <a
+                        href="https://github.com/goplayoutside3"
+                        target="_blank"
+                      >
                         Github
                       </a>
                     </li>

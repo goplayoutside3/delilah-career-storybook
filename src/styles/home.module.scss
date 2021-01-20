@@ -1,5 +1,6 @@
 @import '../styles/common/variables';
-@import '../styles//common/mixins';
+@import '../styles/common/mixins';
+@import '../styles//common/typography';
 
 $page-shape: 0 3% 3% 0;
 $page-shape-back: 3% 0 0 3%;
@@ -126,6 +127,10 @@ $page-shape-back: 3% 0 0 3%;
     background-color: $grey-blue;
   }
 
+  &.globe {
+    background-image: url('/images/globe.svg');
+  }
+
   &.adler {
     background-image: url('/images/chicago.svg');
   }
@@ -175,6 +180,7 @@ $page-shape-back: 3% 0 0 3%;
   position: relative;
 
   .ending {
+    font-family: $yusei;
     color: $med-gray;
     position: absolute;
     top: 15%;
