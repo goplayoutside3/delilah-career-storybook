@@ -102,7 +102,7 @@ export default function Home() {
                     .
                   </p>
                   <p>
-                    Book animation boilerplate is adapted from{' '}
+                    Book animation concept is adapted from{' '}
                     <a
                       href="https://codepen.io/jh3y/pen/VweZryJ"
                       target="_blank"
@@ -146,7 +146,7 @@ export default function Home() {
                     </li>
                     <li>
                       Extensive experience with risk management and facilitating
-                      growth in leadership skills
+                      growth of leadership skills
                     </li>
                     <li>
                       Worked for{' '}
@@ -190,7 +190,25 @@ export default function Home() {
                 <div className={classes(styles.content, styles.resume)}>
                   <p className={styles.years}>2014 - 2016</p>
                   <h2 className="h2">Master of Science in Aquatic Biology</h2>
-                  <p>Details here</p>
+                  <ul className={styles.details}>
+                    <li>Designed and implemented a research project on the ecological impacts of nutrient pollution in waterways</li>
+                    <li>
+                      Published research in the{' '}
+                      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0380133016302015?via%3Dihub" target="_blank">
+                        Journal of Great Lakes Research
+                      </a>
+                    </li>
+                    <li>
+                      Graduated from{' '}
+                      <a href="https://www.gvsu.edu/wri/" target="_blank">
+                        Annis Water Resources Institute{' '}
+                      </a>
+                      of{' '}
+                      <a href="https://www.gvsu.edu/" target="_blank">
+                        Grand Valley State University
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>5</div>
               </div>
