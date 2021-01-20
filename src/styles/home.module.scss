@@ -23,6 +23,10 @@ $page-shape-back: 3% 0 0 3%;
   }
 }
 
+.clay {
+  color: $clay;
+}
+
 #book-animation {
   --page-count: 13; // make sure to change this if needed
   --page-scroll: 25; // helps calcs scroll area
@@ -106,6 +110,7 @@ $page-shape-back: 3% 0 0 3%;
   }
 
   .number {
+    font-family: $yusei;
     position: absolute;
     color: $dark-gray;
     bottom: 1rem;
@@ -150,6 +155,7 @@ $page-shape-back: 3% 0 0 3%;
 }
 
 .content {
+  text-align: center;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -158,6 +164,24 @@ $page-shape-back: 3% 0 0 3%;
   justify-content: center;
   border-radius: $page-shape;
   padding: $section-padding;
+
+  &.resume {
+    padding: $section-padding * 2 $section-padding;
+    justify-content: flex-start;
+  }
+
+  .years {
+    font-family: $yusei;
+    font-size: 1.2rem;
+  }
+
+  .details {
+    list-style: inside;
+
+    & > ::marker {
+      color: $sand;
+    }
+  }
 
   &.illustration {
     background-size: cover;
@@ -186,12 +210,6 @@ $page-shape-back: 3% 0 0 3%;
   &.adler {
     background-image: url('/images/chicago.svg');
   }
-}
-
-.inner-cover-text {
-  color: $med-gray;
-  text-align: center;
-  line-height: 1.5;
 }
 
 .socials {

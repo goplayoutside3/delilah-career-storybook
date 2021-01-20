@@ -58,7 +58,7 @@ export default function Home() {
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <h1>I'm Delilah,</h1>
+                  <h1>I'm Delilah</h1>
                   <h2 className={classes('h2', styles.subtext)}>
                     a fullstack web developer
                   </h2>
@@ -66,7 +66,7 @@ export default function Home() {
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
                 <div className={styles.content}>
-                  <p>KEEP SCROLLING</p>
+                  <p className={styles.clay}>KEEP SCROLLING</p>
                 </div>
               </div>
             </div>
@@ -76,11 +76,18 @@ export default function Home() {
                 <div className={styles.content}>
                   <h2 className="h2">A Journey to Web Development</h2>
                   <p>
-                    This app was built as part of{' '}
+                    This app was built for{' '}
                     <a href="https://www.mintbean.io/" target="_blank">
                       Mint Bean
                     </a>
-                    's weekly hackathon. It utilizes{' '}
+                    's weekly hackathon. Check out the requirements{' '}
+                    <a
+                      href="https://www.mintbean.io/meets/9e5bf4a2-5059-4ced-b893-f8da102c7a35"
+                      target="_blank"
+                    >
+                      here
+                    </a>
+                    ! It utilizes{' '}
                     <a href="https://nextjs.org/" target="_blank">
                       Next.js
                     </a>
@@ -95,26 +102,12 @@ export default function Home() {
                     .
                   </p>
                   <p>
-                    Check out the hackathon requirements{' '}
-                    <a
-                      href="https://www.mintbean.io/meets/9e5bf4a2-5059-4ced-b893-f8da102c7a35"
-                      target="_blank"
-                    >
-                      here
-                    </a>
-                    !
-                  </p>
-                  <p>
-                    Book animation is adapted for React.js from{' '}
-                    <a href="https://codepen.io/jh3y" target="_blank">
-                      jhey
-                    </a>
-                    's{' '}
+                    Book animation boilerplate is adapted from{' '}
                     <a
                       href="https://codepen.io/jh3y/pen/VweZryJ"
                       target="_blank"
                     >
-                      Codepen
+                      jhey's Codepen
                     </a>
                     .
                   </p>
@@ -143,10 +136,32 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
+                <div className={classes(styles.content, styles.resume)}>
                   <p className={styles.years}>2009 - 2018</p>
                   <h2 className="h2">Wilderness Trip Leader</h2>
-                  <p>Details here</p>
+                  <ul className={styles.details}>
+                    <li>
+                      Led paddling trips ranging from 3 to 45 days long in
+                      northern Canada and Alaska
+                    </li>
+                    <li>
+                      Extensive experience with risk management and facilitating
+                      growth in leadership skills
+                    </li>
+                    <li>
+                      Worked for{' '}
+                      <a href="https://manito-wish.org/" target="_blank">
+                        Camp Manito-wish
+                      </a>{' '}
+                      and{' '}
+                      <a
+                        href="https://www.ymcanorth.org/camps/camp_widjiwagan"
+                        target="_blank"
+                      >
+                        Camp Widjiwagan
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div className={styles.number}>3</div>
               </div>
@@ -172,8 +187,8 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
-                  <p>2014 - 2016</p>
+                <div className={classes(styles.content, styles.resume)}>
+                  <p className={styles.years}>2014 - 2016</p>
                   <h2 className="h2">Master of Science in Aquatic Biology</h2>
                   <p>Details here</p>
                 </div>
@@ -201,8 +216,8 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
-                  <p>2018 - 2019</p>
+                <div className={classes(styles.content, styles.resume)}>
+                  <p className={styles.years}>2018 - 2019</p>
                   <h2 className="h2">Fullstack Academy of Code</h2>
                   <p>Details here</p>
                 </div>
@@ -230,8 +245,8 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
-                  <p>2019 - 2020</p>
+                <div className={classes(styles.content, styles.resume)}>
+                  <p className={styles.years}>2019 - 2020</p>
                   <h2 className="h2">Web Developer at Reach Creative</h2>
                   <p>Details here</p>
                 </div>
@@ -253,8 +268,8 @@ export default function Home() {
 
             <div className={classes(styles.page, styles.book, 'book-page')}>
               <div className={classes(styles.page, styles.half, styles.front)}>
-                <div className={styles.content}>
-                  <p>2021 - Present</p>
+                <div className={classes(styles.content, styles.resume)}>
+                  <p className={styles.years}>2021 - Present</p>
                   <h2 className="h2">Web Developer at Adler Planetarium</h2>
                   <p>Details here</p>
                 </div>
