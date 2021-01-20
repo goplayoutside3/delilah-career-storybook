@@ -35,13 +35,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Delilah's Career Journey</title>
+        <title>Delilah's Career</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div id={styles['book-animation']}>
-          <div className={classes(styles.book, styles.shadow)}>Behind</div>
+          <div className={classes(styles.scroll, styles.book)}>
+            <p>SCROLL DOWN</p>
+            <img className={styles.down} src="/images/down.svg"/>
+          </div>
+          <div className={classes(styles.book, styles.shadow)} />
           <div id={styles.book} className={styles.book}>
             <div
               className={classes(
@@ -54,7 +58,8 @@ export default function Home() {
             >
               <div className={classes(styles.page, styles.half, styles.front)}>
                 <div className={styles.content}>
-                  <h1>Delilah's Journey to Web Development</h1>
+                  <h1>I'm Delilah,</h1>
+                  <h2 className="h2">a fullstack web developer</h2>
                 </div>
               </div>
               <div className={classes(styles.page, styles.half, styles.back)}>
