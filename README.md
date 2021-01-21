@@ -1,4 +1,4 @@
-This is a web app built for [Mint Bean](https://www.mintbean.io/)'s weekly hackathon. It's a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a web app built for [Mintbean](https://www.mintbean.io/)'s weekly hackathon. It's a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Deployed Preview
 
