@@ -90,7 +90,7 @@ export default function Home() {
                   <p>
                     This app was built for{' '}
                     <a href="https://www.mintbean.io/" target="_blank">
-                      Mint Bean
+                      Mintbean
                     </a>
                     's weekly hackathon. Check out the requirements{' '}
                     <a
